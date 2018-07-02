@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.preference.PreferenceCategory android:title="Ustawienia odtwarzacza">
+
+        <android.support.v7.preference.SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:key="play_on_start"
+            android:summary="Deklaruje domyślne odtwarzanie filmu na starcie podglądu"
+            android:title="Odtwarzaj film na starcie" />
+
+        <android.support.v7.preference.SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:key="hide_media_player"
+            android:summary="Deklaruje chowanie się przycisków pomocniczych odtwarzacza"
+            android:title="Chowaj przyciski kontrolne odtwarzacza" />
+
+        <android.support.v7.preference.SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:key="show_media_player_buttons"
+            android:summary="Deklaruje widoczność przycisków przewijania"
+            android:title="Pokaż przyciski przewijania" />
+
+        <android.support.v7.preference.ListPreference
+            android:key="seek_bar_color"
+            android:defaultValue="Pomarańczowy"
+            android:entries="@array/SeekBarColors"
+            android:entryValues="@array/SeekBarColors"
+            android:summary="Określa kolor paska postępu odtwarzania filmy"
+            android:title="Kolor paska postępu" />
+
+        <android.support.v7.preference.ListPreference
+            android:key="buttons_color"
+            android:defaultValue="Pomarańczowy"
+            android:entries="@array/SeekBarColors"
+            android:entryValues="@array/SeekBarColors"
+            android:summary="Określa kolor przycisków"
+            android:title="Kolor przycisków" />
+    </android.support.v7.preference.PreferenceCategory>
+
+
+</PreferenceScreen>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:id="@+id/relative_layout_recorder_holder"
+    tools:context=".view.video_recorder_activity.Camera2VideoImageActivity">
+
+    <TextureView
+        android:id="@+id/textureView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"/>
+
+
+
+    <ImageButton
+        style="?android:attr/buttonStyleSmall"
+        android:id="@+id/cameraImageButtonFill"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="44dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/camera_button"
+        android:visibility="visible"
+        android:elevation="2dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_thumb_white_24dp"
+        />
+
+
+    <ImageButton
+        style="?android:attr/buttonStyleSmall"
+        android:id="@+id/cameraImageButton2"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="36dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/camera_button"
+        android:elevation="2dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_thumb_empty_white_24dp"
+        />
+
+    <ImageButton
+        style="?android:attr/buttonStyleSmall"
+        android:id="@+id/videoOnlineImageButton"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="36dp"
+        android:contentDescription="@string/video_button"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:scaleType="centerCrop"
+        android:elevation="2dp"
+        android:src="@drawable/ic_thumb_empty_red_24dp"
+        />
+
+
+    <Chronometer
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chronometer"
+        android:visibility="invisible"
+        android:textColor="@color/colorAccent"
+        android:textSize="25dp"
+        android:layout_above="@+id/videoOnlineImageButton"
+        android:layout_alignStart="@+id/videoOnlineImageButton" />
+
+</RelativeLayout>
